@@ -20,7 +20,7 @@
 
 ## 🖥️ 기술 스택
 
-- **Frontend**: React, Tailwind CSS  
+- **Frontend**: React, SCSS, Zustand, Tanstack/React-Query
 - **Backend**: Spring Boot, MySql  
 - **AI**: OpenAI GPT API  
 - **기타**: git, notion
@@ -29,7 +29,7 @@
 
 ## 🧑‍💻 역할 분담
 
-- **Frontend**: 이수빈, 송승협 
+- **Frontend**: 이수빈, 송승엽 
 - **Backend**: 이승찬, 이혜성, 박지현  
 - **AI**: 이승찬
 

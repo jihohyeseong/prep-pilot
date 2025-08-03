@@ -1,5 +1,28 @@
+@use "../base/" as *;
+
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  padding-block: 2rem;
+}
+
 .home-title {
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   padding: 3rem;
+}
+
+.feed-container {
+  display: grid;
+  grid-template-columns: repeat(3, 35rem);
+  justify-self: center;
+  justify-content: center;
+  gap: 3rem;
+  row-gap: 3rem;
+
+  .feed-nocontent {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+  }
 }

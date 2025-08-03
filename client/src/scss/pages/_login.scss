@@ -1,20 +1,65 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+
 .login-title {
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
-  padding: 5rem
+  gap: 1.5rem;
+  padding: 2rem 3rem;
 }
 
-input {
-  border-radius: 5rem;
-  padding: 1rem 3rem;
-  width: 30rem;
-  border-color: darkblue;
+.pw-show-btn {
+  background-image: url("../../images/icon_hidden.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1rem;
+}
+
+.pw-hide-btn {
+  background-image: url("../../images/icon_eye.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1rem;
+}
+
+.input-username {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  padding: 0.5rem 3rem;
+  border: 1px solid var(--color-text);
+  border-radius: 1rem;
+}
+
+.input-username:has(input:focus) {
+  border: 2px solid $main;
+}
+
+.input-password {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  padding: 0.5rem 3rem;
+  border: 1px solid var(--color-text);
+  border-radius: 1rem;
+}
+
+.input-password:has(input:focus) {
+  border: 2px solid $main;
+}
+
+.alert-msg {
+  color: $red;
+  font-size: 1.3rem;
 }
